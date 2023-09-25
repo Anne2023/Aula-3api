@@ -2,7 +2,7 @@
 from rest_framework import serializers
 
 # Importando o modelo de Student do app
-from ..models.student import Student
+from school_project.models import Student
 
 # Definindo a classe do serializador 'StudentSerializer' que herda de 'serializers.ModelSerializer'
 class StudentSerializer(serializers.ModelSerializer):

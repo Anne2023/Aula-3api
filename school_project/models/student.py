@@ -1,5 +1,6 @@
 # Importando a classe 'models' do módulo 'django.db'
 from django.db import models
+from .task import Task
 
 # Definindo a classe do modelo 'Student' que herda de 'models.Model'
 class Student(models.Model):

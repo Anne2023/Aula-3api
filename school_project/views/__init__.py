@@ -1,0 +1,4 @@
+from school_project.views.studentTaskView import StudentTasksView
+from school_project.views.taskView import TaskDetailView, TaskListCreateView
+from school_project.views.studentView import StudentDetailView,StudentListCreateView
+from school_project.views.subjectView import SubjectDetailView,SubjectListCreateView

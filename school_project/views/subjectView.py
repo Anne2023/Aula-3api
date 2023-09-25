@@ -5,8 +5,9 @@ from rest_framework.response import Response
 from rest_framework import status
 
 # Importando o modelo Subject e o serializador SubjectSerializer do seu aplicativo (assumindo que existem)
-from ..models.subject import Subject
-from ..serializers.subjectSerializer import SubjectSerializer
+from school_project.models.subject import Subject
+from school_project.serializers.subjectSerializer import SubjectSerializer
+
 
 # Definindo a classe de visualização 'SubjectListCreateView' que herda de 'APIView'
 class SubjectListCreateView(APIView):

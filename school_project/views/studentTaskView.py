@@ -4,17 +4,16 @@ from rest_framework.response import Response
 from rest_framework import status
 
 # Importando os modelos de Student e Task do app
-from ..models.student import Student
-from ..models.task import Task
-
-# Importando o serializador TaskSerializer do app
-from ..serializers.taskSerializer import TaskSerializer
+from school_project.serializers.taskSerializer import TaskSerializer
+from school_project.serializers.studentSerializer import StudentSerializer
+from school_project.models.student import Student
+from school_project.models.task import Task
 
 # Definindo a classe da visualização 'StudentTasksView' que herda de 'APIView'
 class StudentTasksView(APIView):
-    def get(self, request, student_id):
+    def get(self, request, pk):
         try:
-            student = Student.objects.get(pk=student_id) # Tenta obter um objeto Student com base no 'student_id' fornecido
+            student = Student.objects.get(pk=pk) # Tenta obter um objeto Student com base no 'student_id' fornecido
         except Student.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND) # Se o Student não existe, retorna uma resposta "Não encontrado"
         

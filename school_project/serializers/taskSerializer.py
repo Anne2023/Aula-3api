@@ -2,7 +2,8 @@
 from rest_framework import serializers
 
 # Importando o modelo de Task do app
-from ..models.task import Task
+from school_project.models import Task
+
 
 # Definindo a classe do serializador 'TaskSerializer' que herda de 'serializers.ModelSerializer'
 class TaskSerializer(serializers.ModelSerializer):
