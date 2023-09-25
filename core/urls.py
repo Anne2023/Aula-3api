@@ -2,10 +2,10 @@
 from django.urls import path
 
 # Importando as classes de visualização relacionadas aos estudantes e tarefas
-from studyControl.views.studentTaskView import StudentTasksView
-from studyControl.views.studentView import StudentListCreateView, StudentDetailView
-from studyControl.views.subjectView import SubjectListCreateView, SubjectDetailView
-from studyControl.views.taskView import TaskListCreateView, TaskDetailView
+from school_project.views.studentTaskView import StudentTasksView
+from school_project.views.studentView import StudentListCreateView, StudentDetailView
+from school_project.views.subjectView import SubjectListCreateView, SubjectDetailView
+from school_project.views.taskView import TaskListCreateView, TaskDetailView
 
 # Lista de URLs e suas associações com as classes de visualização
 
